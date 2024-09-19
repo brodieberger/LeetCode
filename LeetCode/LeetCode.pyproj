@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d8b4c0fd-720e-4942-a4fd-175bac9547d8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Practice\testarea.py</StartupFile>
+    <StartupFile>Easy\Palindrome_Number_Attempt2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -13,7 +13,7 @@
     <RootNamespace>LeetCode</RootNamespace>
     <TestFramework>Pytest</TestFramework>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>Global|PythonCore|3.6-32</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.12</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,15 +28,16 @@
     <Folder Include="Practice\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Easy\Palindrome Number.py" />
+    <Compile Include="Easy\Palindrome_Number_Attempt1.py" />
     <Compile Include="Easy\TwoSum%28BruteForce%29.py" />
     <Compile Include="Practice\algorithmtimetest.py" />
     <Compile Include="Practice\hashmantest.py" />
     <Compile Include="Practice\LinkedListPractice.py" />
+    <Compile Include="Easy\Palindrome_Number_Attempt2.py" />
     <Compile Include="Practice\testarea.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|3.6-32" />
+    <InterpreterReference Include="Global|PythonCore|3.12" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
