@@ -1,6 +1,4 @@
-nums = [0,0,1,1,1,2,2,3,3,4]
-
-for num in nums:
-    nums.pop(num)
-    print(nums)
-
+sum = 1
+for index in range(1, 3):
+    sum = sum + index
+print(f"Sum is: {sum}, i is: {index}")
