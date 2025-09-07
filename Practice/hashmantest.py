@@ -1,6 +1,6 @@
 from typing import List
-nums = [15,20,25,7,100]
-target = 107
+nums = [15,20,25,7,100, 15]
+target = 30
 
 def twoSum(nums: List[int], target: int) -> List[int]:
     numMap = {}
@@ -13,7 +13,6 @@ def twoSum(nums: List[int], target: int) -> List[int]:
     # Find the complement
     for i in range(n):
         complement = target - nums[i]
-        print()
         if complement in numMap and numMap[complement] != i:
             print(nums[i],nums[numMap[complement]])
             return [i, numMap[complement]]
