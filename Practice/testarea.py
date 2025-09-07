@@ -1,4 +1,5 @@
-x = 123
-reversed = 0
+teststring = "1"
+newteststring = teststring.lower()
+print(newteststring)
 
-print(len(x))
+print(teststring.isalnum())
