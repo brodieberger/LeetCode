@@ -1,5 +1,5 @@
-teststring = "1"
-newteststring = teststring.lower()
-print(newteststring)
+mystr = "bceaghf"
 
-print(teststring.isalnum())
+mystr = "".join(sorted(mystr))
+
+print(f"Lowest = {mystr[0]} \nHighest = {mystr[len(mystr)-1]}")
