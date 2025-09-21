@@ -1,5 +1,17 @@
-mystr = "bceaghf"
+nums = [1,2,2,3,3,3,3]
+k = 2
+nummap = {}
+res = []
 
-mystr = "".join(sorted(mystr))
+for i in range (len(nums)):
+    if nums[i] not in nummap:
+        nummap[nums[i]] = 1
+    else:
+        nummap[nums[i]] += 1
 
-print(f"Lowest = {mystr[0]} \nHighest = {mystr[len(mystr)-1]}")
+for i in range(k):        
+    currentval = (max(nummap, key=nummap.get)) # type: ignore
+    nummap.pop(currentval)
+    res.append(currentval)
+
+print(res)
