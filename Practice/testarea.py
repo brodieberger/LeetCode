@@ -1,17 +1,19 @@
-nums = [1,2,2,3,3,3,3]
-k = 2
-nummap = {}
-res = []
+from typing import List
+class Solution:
+    def encode(self, strs: List[str]) -> str:
+        if not strs:
+            return ""
+        sizes, res = [], ""
+        for s in strs:
+            sizes.append(len(s))
+        for sz in sizes:
+            res += str(sz)
+            res += ','
+        res += '#'
+        for s in strs:
+            res += s
+        return res
+    
+solution = Solution()
+print(solution.encode(["hello","there","how","are","you"]))
 
-for i in range (len(nums)):
-    if nums[i] not in nummap:
-        nummap[nums[i]] = 1
-    else:
-        nummap[nums[i]] += 1
-
-for i in range(k):        
-    currentval = (max(nummap, key=nummap.get)) # type: ignore
-    nummap.pop(currentval)
-    res.append(currentval)
-
-print(res)
